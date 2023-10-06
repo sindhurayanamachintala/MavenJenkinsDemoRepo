@@ -2,20 +2,36 @@ package packtest;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class logintest {
 
-
-	@Test
-	public static void startBrowser() throws InterruptedException
+	static WebDriver driver;
+	
+	// Testcase-1: to luanch the browser
+	@Parameters("browsers")
+	@Test    
+	public static void startBrowser(String BrowserName) throws InterruptedException
 	{
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		Thread.sleep(1000);
+       System.out.println("Brower name is :"+BrowserName);
+     
+		if(BrowserName.contains("Chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			Thread.sleep(1000);
+
+		}
+		else if(BrowserName.contains("Edge")) {
+			WebDriverManager.edgedriver().setup();
+			 driver = new EdgeDriver();
+		}
+
+		Thread.sleep(5000);
 		driver.manage().window().maximize();
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		Thread.sleep(1000);
@@ -23,6 +39,18 @@ public class logintest {
 		Assert.assertTrue(title.contains("Orange"), "Title does not macth");
 		driver.quit();
 	}
+	
+	// Testcase-2: to execute in dev environment
+	@Parameters("env")
+	@Test
+	public static void envname(String environmentName)
+	{
+		System.out.println("Brower name is :"+environmentName);
+		
+	}
+	
 }
+
+
 
 

@@ -47,7 +47,6 @@
     
   </dependencies>
 
-
   <build>
     <plugins>
       <plugin>
@@ -58,6 +57,12 @@
 			<suiteXmlFiles>
 			 <suiteXmlFile>testng.xml</suiteXmlFile>
 				 </suiteXmlFiles>
+				 
+				 <systemPropertyVariables>
+					 <browsers>${Browser}</browsers>
+					 <env>${Environment}</env>
+				 </systemPropertyVariables>
+				 
 		</configuration>
       </plugin>
     </plugins>

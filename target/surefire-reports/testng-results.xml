@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-05T15:23:16 IST" name="Practice" finished-at="2023-10-05T15:24:07 IST" duration-ms="50265">
+  <suite started-at="2023-10-06T14:02:44 IST" name="Practice" finished-at="2023-10-06T14:02:59 IST" duration-ms="14097">
     <groups>
     </groups>
-    <test started-at="2023-10-05T15:23:16 IST" name="Test" finished-at="2023-10-05T15:24:07 IST" duration-ms="50265">
+    <test started-at="2023-10-06T14:02:44 IST" name="Test" finished-at="2023-10-06T14:02:59 IST" duration-ms="14097">
       <class name="packtest.logintest">
-        <test-method signature="startBrowser()[pri:0, instance:packtest.logintest@47d9a273]" started-at="2023-10-05T15:23:16 IST" name="startBrowser" finished-at="2023-10-05T15:24:07 IST" duration-ms="50193" status="PASS">
+        <test-method signature="envname(java.lang.String)[pri:0, instance:packtest.logintest@59505b48]" started-at="2023-10-06T14:02:45 IST" name="envname" finished-at="2023-10-06T14:02:45 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- envname -->
+        <test-method signature="startBrowser(java.lang.String)[pri:0, instance:packtest.logintest@59505b48]" started-at="2023-10-06T14:02:45 IST" name="startBrowser" finished-at="2023-10-06T14:02:59 IST" duration-ms="14025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
