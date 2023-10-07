@@ -1,31 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-10-06T14:02:44 IST" name="Practice" finished-at="2023-10-06T14:02:59 IST" duration-ms="14097">
+  <suite started-at="2023-10-06T20:59:20 IST" name="Practice" finished-at="2023-10-06T20:59:34 IST" duration-ms="13750">
     <groups>
     </groups>
-    <test started-at="2023-10-06T14:02:44 IST" name="Test" finished-at="2023-10-06T14:02:59 IST" duration-ms="14097">
-      <class name="packtest.logintest">
-        <test-method signature="envname(java.lang.String)[pri:0, instance:packtest.logintest@59505b48]" started-at="2023-10-06T14:02:45 IST" name="envname" finished-at="2023-10-06T14:02:45 IST" duration-ms="5" status="PASS">
+    <test started-at="2023-10-06T20:59:20 IST" name="Test" finished-at="2023-10-06T20:59:34 IST" duration-ms="13750">
+      <class name="packtest.emailtest">
+        <test-method signature="emaillogin(java.lang.String)[pri:0, instance:packtest.emailtest@5a45133e]" started-at="2023-10-06T20:59:25 IST" name="emaillogin" finished-at="2023-10-06T20:59:34 IST" duration-ms="8643" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[dev]]>
+                <![CDATA[sindhurayanamachintala]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emaillogin -->
+      </class> <!-- packtest.emailtest -->
+      <class name="packtest.logintest">
+        <test-method signature="envname(java.lang.String)[pri:0, instance:packtest.logintest@6bd61f98]" started-at="2023-10-06T20:59:20 IST" name="envname" finished-at="2023-10-06T20:59:20 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- envname -->
-        <test-method signature="startBrowser(java.lang.String)[pri:0, instance:packtest.logintest@59505b48]" started-at="2023-10-06T14:02:45 IST" name="startBrowser" finished-at="2023-10-06T14:02:59 IST" duration-ms="14025" status="PASS">
+        <test-method signature="startBrowser(java.lang.String)[pri:0, instance:packtest.logintest@6bd61f98]" started-at="2023-10-06T20:59:20 IST" name="startBrowser" finished-at="2023-10-06T20:59:25 IST" duration-ms="5010" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at packtest.logintest.startBrowser(logintest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
