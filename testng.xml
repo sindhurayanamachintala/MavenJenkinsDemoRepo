@@ -3,7 +3,7 @@
 <suite name="Practice">
 <test thread-count="5" name="Test">
 <classes>
-<class name="packtest.logintest"/>
+<class name="packtest.logintest"/> 
 <class name="packtest.emailtest"/>
 </classes>
 </test>

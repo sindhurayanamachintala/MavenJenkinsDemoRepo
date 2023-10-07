@@ -11,7 +11,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class emailtest {
 
 	static WebDriver driver=null;
-	
+
 	@Parameters("username")
 
 	@Test
@@ -21,5 +21,7 @@ public class emailtest {
 		driver.get("https://mail.google.com/");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@type='email']")).sendKeys(uname);
-	}
+		Thread.sleep(2000);
+		driver.quit();	
+		}
 }

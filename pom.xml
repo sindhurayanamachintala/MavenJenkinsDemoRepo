@@ -61,7 +61,7 @@
 				 <systemPropertyVariables>
 					 <browsers>${Browser}</browsers>
 					 <env>${Environment}</env>
-					 <username>${name}</username>
+					 <username>${gmailuser}</username>
 				 </systemPropertyVariables>
 				 
 		</configuration>

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Practice" class="navigator-link">
-              <span class="suite-name border-failed">Practice</span>
+              <span class="suite-name border-passed">Practice</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Practice" class="hide-methods failed suite-Practice"> (hide)</a> <!-- hide-methods failed suite-Practice -->
-                      <a href="#" panel-name="suite-Practice" class="show-methods failed suite-Practice"> (show)</a> <!-- show-methods failed suite-Practice -->
-                    </span>
-                    <div class="method-list-content failed suite-Practice">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice" title="packtest.logintest" class="method navigator-link" hash-for-method="startBrowser()">startBrowser()</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Practice -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,17 @@
                     <div class="method-list-content passed suite-Practice">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice" title="packtest.emailtest" class="method navigator-link" hash-for-method="emaillogin(sindhurayanamachintala)">emaillogin(sindhurayanamachintala)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Practice" title="packtest.emailtest" class="method navigator-link" hash-for-method="emaillogin(sindhurayanamachintala123)">emaillogin(sindhurayanamachintala123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Practice" title="packtest.logintest" class="method navigator-link" hash-for-method="envname()">envname()</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Practice" title="packtest.logintest" class="method navigator-link" hash-for-method="envname(dev)">envname(dev)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Practice" title="packtest.logintest" class="method navigator-link" hash-for-method="startBrowser(Chrome)">startBrowser(Chrome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Practice -->
@@ -137,27 +128,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Practice" class="panel Practice">
-          <div class="suite-Practice-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">packtest.logintest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="startBrowser()">
-                  </a> <!-- startBrowser() -->
-                  <span class="method-name">startBrowser</span>
-                  <span class="parameters">()</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at packtest.logintest.startBrowser(logintest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Practice-class-failed -->
           <div class="suite-Practice-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,10 +136,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="emaillogin(sindhurayanamachintala)">
-                  </a> <!-- emaillogin(sindhurayanamachintala) -->
+                  <a name="emaillogin(sindhurayanamachintala123)">
+                  </a> <!-- emaillogin(sindhurayanamachintala123) -->
                   <span class="method-name">emaillogin</span>
-                  <span class="parameters">(sindhurayanamachintala)</span>
+                  <span class="parameters">(sindhurayanamachintala123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,10 +152,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="envname()">
-                  </a> <!-- envname() -->
+                  <a name="envname(dev)">
+                  </a> <!-- envname(dev) -->
                   <span class="method-name">envname</span>
-                  <span class="parameters">()</span>
+                  <span class="parameters">(dev)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="startBrowser(Chrome)">
+                  </a> <!-- startBrowser(Chrome) -->
+                  <span class="method-name">startBrowser</span>
+                  <span class="parameters">(Chrome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,22 +223,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'emaillogin')
-data.setCell(0, 2, 'packtest.emailtest')
-data.setCell(0, 3, 8643);
+data.setCell(0, 1, 'startBrowser')
+data.setCell(0, 2, 'packtest.logintest')
+data.setCell(0, 3, 13027);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'startBrowser')
-data.setCell(1, 2, 'packtest.logintest')
-data.setCell(1, 3, 5010);
+data.setCell(1, 1, 'emaillogin')
+data.setCell(1, 2, 'packtest.emailtest')
+data.setCell(1, 3, 7981);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'envname')
 data.setCell(2, 2, 'packtest.logintest')
-data.setCell(2, 3, 7);
+data.setCell(2, 3, 6);
 window.suiteTableData['Practice']= { tableData: data, tableDiv: 'times-div-Practice'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Practice">
               </div> <!-- times-div-Practice -->
             </div> <!-- times-div -->
@@ -288,21 +266,19 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">packtest.logintest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">envname()</span>
+                <span class="method-name">envname(dev)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">startBrowser()</span>
-                <span class="method-start">10 ms</span>
+                <span class="method-name">startBrowser(Chrome)</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">packtest.emailtest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">emaillogin(sindhurayanamachintala)</span>
-                <span class="method-start">5040 ms</span>
+                <span class="method-name">emaillogin(sindhurayanamachintala123)</span>
+                <span class="method-start">13044 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
