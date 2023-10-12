@@ -57,7 +57,8 @@
 			<suiteXmlFiles>
 			 <suiteXmlFile>testng.xml</suiteXmlFile>
 				 </suiteXmlFiles>
-				 
+		
+				 // we need to provide parameters in jenkins-This project is parameterized
 				 <systemPropertyVariables>
 					 <browsers>${Browser}</browsers>
 					 <env>${Environment}</env>
